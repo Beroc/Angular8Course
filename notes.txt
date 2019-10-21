@@ -20,3 +20,10 @@ und setzt alles was in der app.component.html steht in den <app-root>-Selektor e
 - app.component.ts ist die root-Component einer jeden Angular-App, da diese im app.module.ts "gebootstrapped" wird
 - Eine Component ist eine Typescript Klasse die von Angular instanziiert wird, um Objekte davon erzeugen zu können
 - Dekorators werden immer mit @ eingeleitet
+
+2.16
+- Angular nutzt Components, um Webseites zu bauen und benutzt Modules um bestimmte Teile (z.B. Components) zu Pakete zu schnüren
+- Das App Module ist ein Bundle an Funktionalitäten der Angular AppComponent
+- Die neue Component muss in der app.module.ts Datei in den declarations referenziert werden und über ein import Statement relativ referenziert werden, in
+imports innerhalb von ngModule, werden weitere Module dem app.module hinzugefügt, weil Angular selber in Modulen aufgeteilt ist. Die default-Werte sind,
+BrowserModule, FormsModule und HttpModule, die die Grundfunktionalitäten von Angular bereitstellen
