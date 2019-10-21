@@ -27,3 +27,7 @@ und setzt alles was in der app.component.html steht in den <app-root>-Selektor e
 - Die neue Component muss in der app.module.ts Datei in den declarations referenziert werden und über ein import Statement relativ referenziert werden, in
 imports innerhalb von ngModule, werden weitere Module dem app.module hinzugefügt, weil Angular selber in Modulen aufgeteilt ist. Die default-Werte sind,
 BrowserModule, FormsModule und HttpModule, die die Grundfunktionalitäten von Angular bereitstellen
+
+2.17
+- <app-server> HTML-Tag der app.component.html Datei hinzufügen, um die neue Server-Component nutzen zu können. Das <app-server> Tag bezieht dann den 
+HTML-Code aus der server.component.html-Datei
