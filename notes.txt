@@ -15,3 +15,8 @@ und setzt alles was in der app.component.html steht in den <app-root>-Selektor e
 - Angular isr im Grunde ein JS-Framework, welches das HTML-DOM zur Laufzeit manipuliert
 - Jede Component hat sein eigenes Template mit seinem HTML-Code, sein eigenes Styling und das wichtigste, seine eigene Business-Logik
 - Jede komplexe Web-Anwendung wird in Komponenten aufgeteilt, die dann wiederum mehrfach wiederverndet werden können
+
+2.15
+- app.component.ts ist die root-Component einer jeden Angular-App, da diese im app.module.ts "gebootstrapped" wird
+- Eine Component ist eine Typescript Klasse die von Angular instanziiert wird, um Objekte davon erzeugen zu können
+- Dekorators werden immer mit @ eingeleitet
