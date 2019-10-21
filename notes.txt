@@ -1,0 +1,15 @@
+----------
+Section 2
+----------
+2.13
+- Angular stellt Single Page Application (SPA) bereit. Es wird immer die index.html Datei bereitgestellt im Browser
+- Einstieg von Angular ist immer die main.ts Datei
+- Innerhalb der main.ts Datei steht folgendes statement: platformBrowserDynamic().bootstrapModule(AppModule).catch(err => console.error(err));
+- Dieses verweist auf das AppModule, also auf die app.module.ts Datei
+- Hier ist dieses Statement entscheidend: bootstrap: [AppComponent]
+- Dieses verweist auf die app.component.ts Datei. Dort werden die Parameter eingelesen, die über den Decorator @Component übergeben werden
+- In der index.html Datei ist der Selektor <app-root> angegeben. Dieser wird dann aus der app.component.ts eingelesen und schaut auf die app.component.html
+und setzt alles was in der app.component.html steht in den <app-root>-Selektor eingelesen
+
+2.14
+- 
