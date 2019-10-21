@@ -12,4 +12,6 @@ Section 2
 und setzt alles was in der app.component.html steht in den <app-root>-Selektor eingelesen
 
 2.14
-- 
+- Angular isr im Grunde ein JS-Framework, welches das HTML-DOM zur Laufzeit manipuliert
+- Jede Component hat sein eigenes Template mit seinem HTML-Code, sein eigenes Styling und das wichtigste, seine eigene Business-Logik
+- Jede komplexe Web-Anwendung wird in Komponenten aufgeteilt, die dann wiederum mehrfach wiederverndet werden können
