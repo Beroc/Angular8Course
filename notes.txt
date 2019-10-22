@@ -46,3 +46,9 @@ den HTML Code direkt Inline reinschreiben. Für mehrere Zeilen sollten ``(Backti
 die das Styling verändern
 - Anstatt des styleUrls-Objekts innerhalb des Component Decorators kann auch das styles Objekt übergeben werden, indem die Styles mit ``(Backticks)
 über mehrere Zeilen Plain reingeschrieben werden können anstatt diese in einem externen File zu definieren
+
+2.21 Fully Understanding the Component Selector
+- Der selector der in der component.ts Datei definiert wird kann als HTML-Tag definiert werden, als CSS-Attribute oder als CSS-Klasse.
+Das Selektieren der Componentn als CSS-Id funktioniert nicht
+- Der Selektor im Component Decorator sollte immer als HTML-Tag definiert werden. Als Attribut oder Klasse waren nur Beispiele, wie man es noch machen kann
+
