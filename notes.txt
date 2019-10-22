@@ -35,3 +35,7 @@ HTML-Code aus der server.component.html-Datei
 2.18 Creating Components with the CLI & Nesting Components
 - Components können auch über die Angular CLI erzeugt werden mittels: ng generate component [Name of the component e.g. servers] or shorter: ng g c [Name]
 - Über die CLI erzeugte Components werden automatisch der declaration in der app.module.ts hinzugefügt, sowie auch das import Statement
+
+2.19 Working with Component Templates
+- Anstatt in der servers.component.ts Datei im Component Decorator die templateUrl zu referenzieren kann das Tag auch in template umbenannt werden und dann
+den HTML Code direkt Inline reinschreiben. Für mehrere Zeilen sollten ``(Backticks) verwendet werden
