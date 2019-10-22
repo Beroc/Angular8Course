@@ -41,4 +41,8 @@ HTML-Code aus der server.component.html-Datei
 den HTML Code direkt Inline reinschreiben. Für mehrere Zeilen sollten ``(Backticks) verwendet werden
 
 2.20 Working with Component Styles
-- 
+- Innerhalb der app.component.css Datei kann das CSS-Styling vorgenommen werden
+- Die templateURL kann nur einen String beinhalten, wo hingegen der styleUrls ein Array von Strings übergeben werden kann mit verschiedenen .css Files,
+die das Styling verändern
+- Anstatt des styleUrls-Objekts innerhalb des Component Decorators kann auch das styles Objekt übergeben werden, indem die Styles mit ``(Backticks)
+über mehrere Zeilen Plain reingeschrieben werden können anstatt diese in einem externen File zu definieren
