@@ -1,7 +1,7 @@
 ----------
 Section 2
 ----------
-2.13
+2.13 How an Angular App gets Loaded and Started
 - Angular stellt Single Page Application (SPA) bereit. Es wird immer die index.html Datei bereitgestellt im Browser
 - Einstieg von Angular ist immer die main.ts Datei
 - Innerhalb der main.ts Datei steht folgendes statement: platformBrowserDynamic().bootstrapModule(AppModule).catch(err => console.error(err));
@@ -11,23 +11,27 @@ Section 2
 - In der index.html Datei ist der Selektor <app-root> angegeben. Dieser wird dann aus der app.component.ts eingelesen und schaut auf die app.component.html
 und setzt alles was in der app.component.html steht in den <app-root>-Selektor eingelesen
 
-2.14
+2.14 Components are Important!
 - Angular isr im Grunde ein JS-Framework, welches das HTML-DOM zur Laufzeit manipuliert
 - Jede Component hat sein eigenes Template mit seinem HTML-Code, sein eigenes Styling und das wichtigste, seine eigene Business-Logik
 - Jede komplexe Web-Anwendung wird in Komponenten aufgeteilt, die dann wiederum mehrfach wiederverndet werden können
 
-2.15
+2.15 Creating a New Component
 - app.component.ts ist die root-Component einer jeden Angular-App, da diese im app.module.ts "gebootstrapped" wird
 - Eine Component ist eine Typescript Klasse die von Angular instanziiert wird, um Objekte davon erzeugen zu können
 - Dekorators werden immer mit @ eingeleitet
 
-2.16
+2.16 Understanding the Role of AppModule and Component Declaration
 - Angular nutzt Components, um Webseites zu bauen und benutzt Modules um bestimmte Teile (z.B. Components) zu Pakete zu schnüren
 - Das App Module ist ein Bundle an Funktionalitäten der Angular AppComponent
 - Die neue Component muss in der app.module.ts Datei in den declarations referenziert werden und über ein import Statement relativ referenziert werden, in
 imports innerhalb von ngModule, werden weitere Module dem app.module hinzugefügt, weil Angular selber in Modulen aufgeteilt ist. Die default-Werte sind,
 BrowserModule, FormsModule und HttpModule, die die Grundfunktionalitäten von Angular bereitstellen
 
-2.17
+2.17 Using Custom Components
 - <app-server> HTML-Tag der app.component.html Datei hinzufügen, um die neue Server-Component nutzen zu können. Das <app-server> Tag bezieht dann den 
 HTML-Code aus der server.component.html-Datei
+
+2.18 Creating Components with the CLI & Nesting Components
+- Components können auch über die Angular CLI erzeugt werden mittels: ng generate component [Name of the component e.g. servers] or shorter: ng g c [Name]
+- Über die CLI erzeugte Components werden automatisch der declaration in der app.module.ts hinzugefügt, sowie auch das import Statement
