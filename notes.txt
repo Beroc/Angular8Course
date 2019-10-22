@@ -52,3 +52,7 @@ die das Styling verändern
 Das Selektieren der Componentn als CSS-Id funktioniert nicht
 - Der Selektor im Component Decorator sollte immer als HTML-Tag definiert werden. Als Attribut oder Klasse waren nur Beispiele, wie man es noch machen kann
 
+2.22. [OPTIONAL] Assignment Solution
+
+2.23 What is Databinding?
+- 
